@@ -1,10 +1,10 @@
 let secretNumber = Math.floor(Math.random() * 10) + 1;
 let insertedNumber = 0;
 let attempts = 1;
-let maximunAttempts = 2;
+let maximunAttempts = 3;
 
 while (insertedNumber != secretNumber) {
-  insertedNumber = prompt("Please, insert a number from 1 to 10.");
+  insertedNumber = parseInt(prompt("Please, insert a number from 1 to 10."));
   console.log(secretNumber, insertedNumber);
   if (insertedNumber == secretNumber)
     alert(
